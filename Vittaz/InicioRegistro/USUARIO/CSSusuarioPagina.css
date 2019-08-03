@@ -1,0 +1,493 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+.navbar-dark{
+	background-color: black;
+}
+body{
+	/*background: url(agua.jpg);*/
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family:Roboto;
+  background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/*Este es el css del menu de opciones de usuario*/
+.contenedor-form .formulario{
+	position: absolute;
+	color:#fff;
+}
+.contenedor-form #NombreUsuario{
+	margin-top: 1em;
+	margin-bottom: 0em;
+	font-size: 1.25em;
+	font-weight: 400;
+	line-height: 1;
+	text-align: center;
+  font-family: 'Sunflower', sans-serif;
+	margin-bottom: 1em;
+	cursor: pointer;
+}
+.main{
+	outline:none;
+	display: block;
+	padding: 0.625em  1em;
+	color:#fff;
+	font-weight: normal;
+	font-family: 'Sunflower', sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	transition: all .5s ease;
+	cursor: pointer;
+	border-radius: .5em;
+}
+#vittaz{
+	position: absolute;
+	top: 0.8em;
+	font-family: 'Prata', serif;
+	font-size: 7em;
+	color: #fff;
+}
+/* Este es el CSS del apartado de ACTIVIDADDEAGUA*/
+.contenedor-form .ActividadAgua{
+	position: absolute;
+	top: 71em;
+	right: 5em;
+	left: 11em;
+	width: 80%;
+	margin-top:2em;
+	margin-bottom: 5em;
+	color:black;
+}
+.ActividadAgua h1{
+	text-align: left;
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 0.5em;
+
+}
+.ActividadAgua #instrucciones{
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Old Standard TT', serif;
+	margin-bottom: 0.5em;
+}
+#promedioAgua12H{
+	text-align: center;
+	width: 40%;
+	color: rgb(0,0,0,.9);
+	position: relative;
+	left: 10em;
+	border-radius: 2em;
+	font-family: 'Neucha', cursive;
+	background-color: #78C8FF;
+	font-size: 2em;
+	cursor: pointer;
+}
+#promedioFuga{
+	text-align: center;
+	width: 60%;
+	color: rgb(0,0,0,.9);
+	margin-left:10em;
+	border-radius: 2em;
+	font-family: 'Neucha', cursive;
+	background-color: #78C8FF;
+	font-size: 2em;
+	cursor: pointer;
+}
+#fugaBoton{
+	position: absolute;
+	cursor: pointer;
+	background-color: #1ab6ff;
+	right: 1em;
+	margin-top:0;
+	margin-right: 0;
+	width:  13em;
+	font-size: 1.125em;
+	line-height: 1.875em;
+	text-align: center;
+	border-radius: 0.625em;
+	transition: all .5s ease;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: 'Kalam', cursive;
+}
+#explicacionPromedio{
+	display:flex;
+	flex/direction:row;
+	flex-wrap:wrap;
+	justify-content:flexend;
+}
+#fugaBoton:hover{
+	background-color: #6FD1FF;
+}
+#detectarFugas{
+	display: none;
+}
+#actividad{
+	display: none;
+}
+.graficando input[type = "text"]{
+	background: #1ab6ff;
+	width: 20%;
+	padding: 10px 15px;
+	color:#fff;
+	border: none;
+	border-radius: 1em;
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin-left:20em;
+	transition: all .5s ease;
+}
+.graficando input[type = "submit"]{
+	background: #1ab6ff;
+	color:#fff;
+	width: 20%;
+	margin:0 48px;
+	padding: 10px 0;
+	font-weight: normal;
+	font-family: Roboto;
+	border-radius: 1em;
+	letter-spacing: 1px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.opciones .ActividadAgua{
+	display: none;
+}
+#flexInfoActividad{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	position: relative;
+	right: 5em;
+}
+.carrouPicActividad{
+	position: relative;
+	max-width:50em;
+	width: 45%;
+	top: 0.3em;
+	bottom: 2em;
+}
+#conte1{
+	margin-right: 1em;
+}
+#proyecciones{
+	display: none;
+}
+/*CSS de la parte de estadísticas*/
+.explicacionApartado{
+	text-align: center;
+	font-size: 1.3em;
+	font-family: 'Sunflower', sans-serif;
+	position: relative;
+	top: 1em;
+	margin-bottom: 5em;
+}
+#crecimientoEscala{
+	position: relative;
+	top: 1.3em;
+}
+/*CSS de la opción de DATOS DE USUARIO*/
+.opciones .datosUsuario{
+	position: absolute;
+	top: 70em;
+	right: 5em;
+	left: 12em;
+	background: rgb(0,0,0,.7);
+	border-radius: 1.25em;
+	color: #fff;
+	width: 80%;
+	padding-bottom: 1.1em;
+	text-align: center;
+	margin-bottom: 6em;
+}
+.opciones #mainDatos{
+	font-family: 'Sunflower', sans-serif;
+	margin-top: 1em;
+	width: 25em;
+	font-family: 'Allerta', sans-serif;
+	font-size: 1.7em;
+}
+.opciones .datosUsuario p{
+	margin-left: 7.8em;
+	margin-right: 7.8em;
+	text-align: center;
+	margin-bottom: 1em;
+	border-radius: 0.5em;
+	background: rgb(0,0,0,.5);
+	padding: 0.5em 0.5em;
+	cursor: pointer;
+	transition: all .5s ease;
+	font-size: 1.5em;
+}
+.opciones .datosUsuario{
+	display: none;
+}
+.opciones .datosUsuario p:hover{
+	background: #1ab6ff;
+}
+
+/*CSS de la opción de HUELLA HIDRICA*/
+.contenedor-form .HuellaHidrica{
+	position: absolute;
+	top: 70em;
+	right: 5em;
+	left: 11em;
+	width: 80%;
+	margin-top:2em;
+	margin-bottom: 5em;
+	color:#fff;
+	border-radius: 20px;
+}
+.contenedor-form .HuellaHidrica h2{
+	margin: 0 0 5em 0;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1;
+}
+.contenedor-form .recomendacionesBtn:hover{
+	background: #1128FF;
+}
+.infoHuellaHidrica{
+	color: black;
+}
+#headHuella{
+	text-align: left;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2.2em;
+	margin-bottom: 0.5em;
+	color: black;
+	transition: all .5s ease;
+}
+.recomendacionesBtn{
+	position: absolute;
+	cursor: pointer;
+	background-color: #1ab6ff;
+	right: 1em;
+	margin-top:0;
+	margin-right: 0;
+	width:  12em;
+	font-size: 1.125em;
+	line-height: 1.875em;
+	text-align: center;
+	border-radius: 0.625em;
+	transition: all .5s ease;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: 'Kalam', cursive;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+#pru{
+	background-color: green;
+	text-align: center;
+	top: 0px;
+	right:0px;
+	width: 30%;
+}
+#promedio{
+	text-align: center;
+	width: 40%;
+	color: black;
+	position: absolute;
+	left: 9em;
+	margin-left:8em;
+	font-family: 'Neucha', cursive;
+	font-size: 1.9em;
+	padding: 0.3em 0.2em;
+}
+#teRecomendamos{
+	position: relative;
+	left: 0em;
+	top:0.625em;
+	background-color: #00E883;
+	border-radius: 0.625em;
+	width: 45%;
+	text-align: center;
+	font-size: 2em;
+	color:white ;
+	margin-bottom: 0.8em;
+	font-family: 'Dosis', sans-serif;
+}
+.opciones .HuellaHidrica #contenido2{
+	display: none;
+}
+#contenido1 #headContenido1{
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Old Standard TT', serif;
+	margin-bottom: 1em;
+	color: black;
+}
+.opciones .HuellaHidrica{
+	display: none;
+}
+#regresarHuellaBtn{
+	position: absolute;
+	cursor: pointer;
+	background-color: #1ab6ff;
+	right: 1em;
+	margin-top:0;
+	margin-right: 0;
+	width:  9em;
+	font-size: 1.125em;
+	line-height: 1.875em;
+	text-align: center;
+	border-radius: 0.625em;
+	transition: all .5s ease;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: 'Kalam', cursive;
+}
+#contenido1{
+	display: none;
+}
+.opciones #contenido3{
+	display: none;
+}
+.primerBotonHuella{
+	position: relative;
+	cursor: pointer;
+	background-color: #1ab6ff;
+	width:  10em;
+	font-size: 1.125em;
+	line-height: 1.875em;
+	text-align: center;
+	border-radius: 0.625em;
+	transition: all .5s ease;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: 'Kalam', cursive;
+	position:relative;
+	bottom:0;
+  left:16em;
+}
+.primerBotonHuella:hover{
+	background: #1128FF;
+}
+#picturesGasto{
+	display:flex;
+	flex/direction:row;
+	flex-wrap:wrap;
+	justify-content:flexend;
+	margin-top: 2em;
+}
+.card-deck h5{
+	color: black;
+	text-align: justify;
+	font-family: 'Sunflower', sans-serif;
+}
+#cardDeck2{
+	position: relative;
+	top: 2em;
+}
+/*Estilo de la pantalla de INICIO con DEFINICIONES*/
+.inicio{
+	position: absolute;
+	top: 70em;
+	right: 5em;
+	left: 5em;
+}
+.Info h1{
+	margin: 0 0 5em 0;
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 1;
+	text-align: left;
+  font-family: 'PT Sans', sans-serif;
+	margin-bottom: 0.6em;
+}
+.Info div{
+	margin-top:1em;
+	margin-bottom: 2em;
+	font-family: 'Old Standard TT', serif;
+}
+.Info h3{
+	margin-top: 0.5em;
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.5em;
+}
+.nextPage{
+	position: relative;
+	width: 20%;
+	padding: 0.5em 1em;
+	background: #1ab6ff;
+	border-radius: 1.25em;
+	text-align: center;
+	color: #fff;
+	transition: all .5s ease;
+	cursor: pointer;
+	left: 25em;
+}
+.pageBefore{
+	position: relative;
+	top: 2em;
+	left: 25em;
+	width: 20%;
+	padding: 0.5em 1em;
+	background: #0E5279;
+	border-radius: 0.5em;
+	text-align: center;
+	color: #fff;
+	transition: all .5s ease;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+.card-img-overlay h1{
+	font-family: 'Ultra', serif;
+	font-size: 4em;
+	color: rgb(0,0,0,.9);
+}
+#cardImgMedidor{
+	width: 20%;
+	height: 100%;
+}
+
+/*Estilo de la pantalla de Escala*/
+.opciones .Escala{
+	position: absolute;
+	top: 70em;
+	right: 5em;
+	left: 0em;
+  height: 4em;
+	width: 100%;
+	margin-left:3em;
+	margin-right: 0px;
+	margin-top:2em;
+	color:#fff;
+	border-radius: 20px;
+}
+.opciones .Escala{
+	display: none;
+}
+.opciones .Escala h1{
+	text-align: left;
+	font-family: 'Slabo 27px', serif;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	color: black;
+	transition: all .5s ease;
+}
+ul#contOp>li{
+				float:left;
+}
+.parrafo{
+	color:#000000;
+	font-size: 1.5em;
+}
+#animaes h1{
+	font-size: 2em;
+}
+#Escala1{
+	position: relative;
+	left: 45%;
+	padding: 1em;
+}

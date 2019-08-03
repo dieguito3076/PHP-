@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>"Arreglos con foreach"</title>
+	<style type = 'text/css'>
+		table {
+		   width: 50%;
+		   border: 1px solid #000;
+		}
+		th, td {
+		   width: 25%;
+		   text-align: center;
+		   vertical-align: top;
+		   border: 1px solid #000;
+		   border-collapse: collapse;
+		   padding: 0.3em;
+		   caption-side: bottom;
+		}
+		caption {
+		   padding: 0.3em;
+		}
+		tr:nth-child(odd){
+			background-color = #fbfbfb;
+		}
+	</style>
+</head>
+<body>
+	<?php
+		echo"<table BORDER = '1px'>";
+			$array = [['color','noming'],['rojo','red'],
+					  ['blanco','white'],['azul','blue'],
+					  ['verde','green'],['amarillo','yellow']];
+					$valor = 0;
+					$superficie = 0;
+					foreach($array as $superficie){
+						echo"<tr>";
+						foreach($superficie as $indice){
+							echo"<td> $indice</td>";
+						}
+						echo"</tr>";
+					}
+		echo"</table>";
+		echo"<br />";
+		$frutas = array("limón", "naranja", "banana", "albaricoque");
+		echo "Ordenando STRINGS Con SORT <br />";
+		sort($frutas);
+		foreach ($frutas as $clave => $valor) {
+			echo "frutas[" . $clave . "] = " . $valor . "<br />";
+		}
+		echo"<br />";
+		$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+		arsort($fruits);
+		foreach ($fruits as $key => $val) {
+			echo "$key = $val\n";
+		}
+	?>
+	
+</body>
+</html>
+<!--
+Ordenando un arreglo:
+
+	SORT_REGULAR();
+	SORT_STRING();
+	SORT_NUMERICAL();
+
+http://php.net/manual/es/array.sorting.php
+dando formato a la tabla css : http://elbauldelcodigo.com/tablas-filas-colores-distintos-css/6/0
+-->

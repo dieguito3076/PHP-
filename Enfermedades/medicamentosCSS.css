@@ -1,0 +1,69 @@
+body{
+  background: url(fondo.jpg);
+  -webkit-box-sizing: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+p{
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.3em;
+}
+.card-group{
+  position: relative;
+  max-width: 45em;
+  width: 10;
+  top: 2em;
+  left:  3em;
+  padding-right: 3em;
+  padding-bottom: 3em;
+}
+.main{
+	outline:none;
+	display: block;
+	padding: 0.625em  1em;
+	color:#fff;
+	font-weight: normal;
+	font-family: 'Rokkitt', serif;
+	font-size: 1em;
+	text-align: center;
+	transition: all .5s ease;
+	cursor: pointer;
+	border-radius: .5em;
+}
+.main:hover{
+  color: #397DFF;
+}
+
+ul#contOp>li{
+	float:left;
+}
+
+.flexGraph{
+  display:flex;
+	flex/direction:row;
+	flex-wrap:wrap;
+	justify-content:flexend;
+}
+canvas{
+  max-width: 30em;
+  width: 10;
+}
+.heads{
+  font-family: 'Quattrocento', serif;
+  font-size: 1.8em;
+  position: relative;
+  left: 4em;
+  top: 1em;
+  background-color: #9EFFF7;
+  max-width: 20em;
+  width: 15em;
+  text-align: center;
+  border-radius: 1.54em;
+}
+.bg-dark {
+    background-color: #4786FF!important;
+}
+a:link {color:#ffffff;}
+a:visited {color:#ffffff;}
+a:active {color:#ffffff;}
+a:hover {color:#ffffff;}

@@ -1,0 +1,44 @@
+//Poniendo variables en otros archivos de php
+//Primer archivo.php
+----------------------------------------------------------------
+<?php
+	//Archivo variables.php 
+	$a = 1;
+	$b = 2;
+	$cad = 'hola';
+?>
+-----------------------------------------------------------------
+<?php
+	//ArchivoPrincipal.php
+	echo 'Este es principal';
+	//Voy a definir una variable e imprimirla desde otro archivo 
+	include 'variables.php';
+	echo $a;
+	echo $b;
+	echo $cad;
+	
+?>
+------------------------------------------------------------------
+------------------------------------------------------------------
+//Definiendo funciones en PHP y metiéndolas desde INCLUDE
+//VOID es un valor que implica el retorno de una acción
+<?php
+	//funciones.php
+	function saludo()
+	{
+		echo 'hola';
+		return;
+	}
+	function suma($num1, $num2)
+	{
+		$resul = $num1 + $num2;
+		return $resul;
+	}
+?>
+--------------------------------------------------------------------
+<?php
+	include 'funciones.php';
+	saludo();
+	$resul = suma(2,4);
+	echo $resul;
+?>

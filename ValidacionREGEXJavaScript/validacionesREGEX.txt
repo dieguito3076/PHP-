@@ -1,0 +1,31 @@
+//correo electronico de gmail o comunidad unam.
+//    https://www.youtube.com/watch?v=KPa9B1Xl7Fw   VIDEO PARA VER
+//PAGINA ES: -------------------------http://rubular.com/---------------------------
+
+//    ^(? = .*[a-z])(? = .*[A-Z])(? = .*[\d])(? = .*[+-])[a-zA-Z\d+-]{4-8}$
+      ^
+//     (? = .*[a-z]) ahí es que se pueden meter en cualquier parte esos digitos y los debo de incluir en el principal []
+validacion = ["^[A-Z][a-z]+$", "^([0-9]{9})*$", "^([a-zA-Z0-9@*#]{8,15})$", "^[56]{1}[0-9]{7}$",
+"^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$"];
+elemento = ["nombre", "Numero de cuenta", "contraseña", "telefono", "CURP"];
+elementos = [];
+objetos = ["nombre", "NoC", "Cont", "Tel", "Cur"];
+function validar(num)
+{
+	dato = null;
+    objetos[num] = new RegExp(validacion[num]);
+	dato = prompt("ingresar " + elemento[num]);
+	if(objetos[num].test(dato))
+    {
+		alert("Dato valido");
+    }
+    else
+    {
+		alert("Dato invalido ");
+		validar(num);
+	}
+	return dato;
+}
+for(var i = 0; i < 5; i++)	
+	elementos.push(validar(i));
+

@@ -1,0 +1,111 @@
+#pulso {
+      min-width: 500px;
+      max-width: 800px;
+      height: 400px;
+      position: relative;
+      left: 1em;
+}
+#temperatura{
+      max-width: 800px;
+      min-width: 380px;
+      height: 400px;
+      position: relative;
+      left: 10em;
+}
+#respiraciones{
+}
+.flexBox{
+      display:flex;
+      flex/direction:row;
+      flex-wrap:wrap;
+      justify-content:flexend;
+}
+#flexGraph{
+  position: relative;
+  top: 1em;
+}
+#tituloMonitoreo{
+  font-size: 3em;
+  position: relative;
+  text-align: center;
+  left: 5em;
+  top: 0.5em;
+  padding-bottom: 1em;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+#headerM{
+  background-color: #5DA5E8;
+}
+#boton{
+  height: 2.4em;
+  position: relative;
+  left: 4em;
+  top: 2.8em;
+  width: 10em;
+}
+button{
+  position: relative;
+  left: 22em;
+  width: 40em;
+  top: 1em;
+}
+#diagnosticoFinal{
+  text-align: center;
+  font-family: 'Bevan', cursive;
+  font-size: 2.5em;
+}
+#imagenesDos{
+  padding-bottom: 2em;
+}
+#imgDiagnos{
+  max-width: 50em;
+  width: 40em;
+
+  height: 30em;
+  position: relative;
+  left: 22em;
+}
+#imgPropia{
+  height: 13em;
+  max-width: 25em;
+  width: 20em;
+  position: relative;
+  top: 17em;
+  left: 2em;
+}
+#anuncio{
+  max-width: 50em;
+  width: 40em;
+  position: relative;
+  left: 22em;
+  text-align: center;
+}
+#descripcion{
+  max-width: 50em;
+  width: 35em;
+  position: relative;
+  left: 17.5em;
+  text-align: center;
+  font-family: 'Nixie One', cursive;
+  color: black;
+  font-size: 1.2em;
+}
+.imagenMedi{
+  max-width: 40em;
+  width: 20em;
+  max-height: 15em;
+  height: 10em;
+  position: relative;
+  top: 1em;
+  padding-bottom: 1em;
+  left: 5em;
+}
+.cardInfo{
+  position: relative;
+  left: 8em;
+  top: 1em;
+}
+#seccionDiagnostico{
+  display: none;
+}
